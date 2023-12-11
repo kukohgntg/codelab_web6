@@ -1,66 +1,65 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Nama : Kukoh Fatchu Rahman
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+NIM : 202110370311001
 
-## About Laravel
+Kelas : Pemrograman Web B
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Codelab Modul 6
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## REST API
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1.  Get All Product Category
 
-## Learning Laravel
+    ![](media/c09c07c38b12144a0c71e679bc9130ad.png)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+2.  Get All Product By ID
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+    ![](media/95460e7624d01f7a2d1b7adff5c5658b.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3.  Create Product Category
 
-## Laravel Sponsors
+    ![](media/0ccf58481cddaa5485e46fc38e1ead31.png)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+    ![](media/6ff43396e17348376717cd54ee19d529.png)
 
-### Premium Partners
+4.  Update Product Category
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+    ![](media/dfa775196e284fb75aae05160eef79d4.png)
 
-## Contributing
+    ![](media/b55f9806160bb3801499664c849cacee.png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+5.  Delete Product Category
 
-## Code of Conduct
+    ![](media/eab723f89cd7952177c0b95459dc94ed.png)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    ![](media/99e0496d00fad0bf8f089d0709b1e3c7.png)
 
-## Security Vulnerabilities
+## PENJELASAN SINGKAT
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1.  Environtment ini berfungsi untuk meletakkan variable yang terkait dengan koneksi ke database, nama app, base url, dan variable – variable lainnya
 
-## License
+    ![](media/6f6d19ca8624f5a08a79546106dd437e.png)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+2.  Laravel migration adalah fitur untuk membuat suatu skema tabel dengan berbentuk sebuah code.
+
+    ![](media/d1be071148a867d164482562010535d4.png)
+
+3.  Untuk membuat Model di Laravel cukup dengan mengetikan comand pada terminal “php artisan make:model ProductCategory”
+
+    ![](media/cdf61835647e2048d7fa6ec752664d18.png)
+
+4.  Laravel Request adalah fitur Laravel yang berfungsi untuk membuat validasi terhadap Request Body yang nantinya kita gunakan untuk melakukan CRUD pada API
+
+    ![](media/5c80eb2a42fb2ec3a10e2e22564a2fcf.png)
+
+5.  Laravel Resource merupakan fitur untuk melakukan formating terhadap response dari API yang akan kita buat dalam hal ini kita akan menggunakan format JSON sebagai response dari API kita nantinya
+
+    ![](media/a01403ea37e6edb3a473e91b11cec520.png)
+
+6.  Untuk membuat Controller di Laravel cukup dengan mengetikan comand pada terminal “php artisan make:controller ProductCategory --api” --api karena Controller khusus untuk pembuatan API
+
+    ![](media/61d710925b4500c784fa0dd7979fdfdc.png)
+
+7.  Route berguna untuk menentukan API dengan method tertentu seperti GET, POST, PUT, PATCH, DELETE. Untuk routing khusus API terdapat pada file routes/api.php,
+
+    ![](media/8d1fc581b09be71cecb1b7c6219e2ca3.png)
